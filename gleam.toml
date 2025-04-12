@@ -1,0 +1,11 @@
+name = "glepack"
+version = "0.1.0"
+description = "MessagePack serializer implementation for Gleam"
+licences = ["Apache-2.0"]
+repository = { type = "github", user = "Lemorz56", repo = "glepack" }
+
+[dependencies]
+gleam_stdlib = ">= 0.44.0 and < 2.0.0"
+
+[dev-dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"
