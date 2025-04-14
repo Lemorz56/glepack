@@ -1,11 +1,11 @@
 //// This Module provides functions to encode and decode MessagePack data
 
 import gleam/bit_array
-import msgpack/error
+import glepack/error
 
-import msgpack/data
-import msgpack/decode as msgpack_decode
-import msgpack/encode
+import glepack/data
+import glepack/decode as msgpack_decode
+import glepack/encode
 
 /// Convert a Gleam value to MessagePack format.
 /// 

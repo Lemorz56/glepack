@@ -10,8 +10,8 @@ import gleam/int
 /// ## Example Usage
 /// 
 /// ```gleam
-/// import msgpack/decode
-/// import msgpack/error
+/// import glepack/decode
+/// import glepack/error
 /// 
 /// pub fn handle_decode(data: BitArray) {
 ///   case decode.value(data) {

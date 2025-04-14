@@ -1,9 +1,9 @@
 import gleam/bit_array
 import gleam/result
 import gleeunit/should
-import msgpack/data
-import msgpack/decode
-import msgpack/encode
+import glepack/data
+import glepack/decode
+import glepack/encode
 
 pub fn extension_encoding_test() {
   // fixext 1 - extension with 1 byte of data

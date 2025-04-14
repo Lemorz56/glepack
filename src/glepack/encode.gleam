@@ -4,7 +4,7 @@ import gleam/bit_array
 import gleam/dict
 import gleam/list
 import gleam/string
-import msgpack/data
+import glepack/data
 
 // @external(javascript, "./float.mjs", "encodeFloat64")
 @external(erlang, "float", "encode_float64")

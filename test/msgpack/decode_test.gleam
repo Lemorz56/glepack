@@ -1,9 +1,9 @@
 import gleam/dict
 import gleam/list
 import gleeunit/should
-import msgpack/data
-import msgpack/decode
-import msgpack/error
+import glepack/data
+import glepack/decode
+import glepack/error
 
 pub fn nil_decoding_test() {
   decode.value(<<0xc0>>)

@@ -3,7 +3,7 @@
 [![Package Version](https://img.shields.io/hexpm/v/glepack)](https://hex.pm/packages/glepack)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/glepack/)
 
-A complete [MessagePack](https://msgpack.org/) serialization library for the Gleam programming language.
+A [MessagePack](https://msgpack.org/) serialization library for the Gleam programming language.
 
 GlePack allows you to encode Gleam values to MessagePack binary format and decode MessagePack binary data back to Gleam values.
 
@@ -20,7 +20,7 @@ gleam add glepack
 ```gleam
 import gleam/dict
 import glepack
-import msgpack/data
+import glepack/data
 
 pub fn main() {
   // Encode a value, returning a Result
@@ -148,7 +148,7 @@ glepack.unpack_exact_strict(data)
 
 ```gleam
 import glepack
-import msgpack/data
+import glepack/data
 
 pub fn encode_array() {
   // Create an array with different value types
@@ -165,7 +165,7 @@ pub fn encode_array() {
 ```gleam
 import gleam/dict
 import glepack
-import msgpack/data
+import glepack/data
 
 pub fn encode_map() {
   // Create a map
@@ -185,7 +185,7 @@ Extensions are a powerful feature of MessagePack that allow you to define custom
 
 ```gleam
 import glepack
-import msgpack/data
+import glepack/data
 import gleam/bit_array
 
 // Example: Custom timestamp extension
@@ -249,7 +249,7 @@ GlePack handles complex nested data:
 ```gleam
 import gleam/dict
 import glepack
-import msgpack/data
+import glepack/data
 
 pub fn handle_nested_data() {
   // Create a nested structure with map, array, and various data types
@@ -288,7 +288,7 @@ GlePack provides detailed error information when decoding fails:
 import gleam/bit_array
 import gleam/result
 import glepack
-import msgpack/error
+import glepack/error
 
 pub fn handle_errors() {
   // Let's say we received some MessagePack data from an external source

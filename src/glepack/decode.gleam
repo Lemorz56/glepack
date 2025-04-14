@@ -3,8 +3,8 @@
 import gleam/bit_array
 import gleam/dict
 import gleam/list
-import msgpack/data
-import msgpack/error
+import glepack/data
+import glepack/error
 
 /// Decodes a MessagePack value from a BitArray
 /// Returns a tuple with the decoded value and the remaining BitArray

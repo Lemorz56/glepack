@@ -5,7 +5,7 @@ import gleam/string
 import gleeunit
 import gleeunit/should
 import glepack
-import msgpack/data
+import glepack/data
 
 pub fn main() {
   gleeunit.main()

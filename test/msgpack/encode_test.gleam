@@ -3,8 +3,8 @@ import gleam/dict
 import gleam/int
 import gleam/list
 import gleeunit/should
-import msgpack/data
-import msgpack/encode
+import glepack/data
+import glepack/encode
 
 pub fn nil_encoding_test() {
   let value = encode.nil()
