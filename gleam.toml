@@ -1,6 +1,6 @@
 name = "glepack"
 version = "0.1.0"
-description = "MessagePack serializer implementation for Gleam"
+description = "MessagePack (msgpack) implementation for Gleam"
 licences = ["Apache-2.0"]
 repository = { type = "github", user = "Lemorz56", repo = "glepack" }
 
