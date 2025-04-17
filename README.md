@@ -3,6 +3,10 @@
 [![Package Version](https://img.shields.io/hexpm/v/glepack)](https://hex.pm/packages/glepack)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/glepack/)
 
+> [!WARNING]  
+> This library is still being developed, use at your own risk.
+
+
 A [MessagePack](https://msgpack.org/) serialization library for the Gleam programming language.
 
 GlePack allows you to encode Gleam values to MessagePack binary format and decode MessagePack binary data back to Gleam values.
@@ -183,6 +187,9 @@ pub fn encode_map() {
 
 Extensions are a powerful feature of MessagePack that allow you to define custom types:
 
+WIP
+
+<!-- 
 ```gleam
 import glepack
 import glepack/data
@@ -240,7 +247,8 @@ pub fn timestamp_example() {
   let original = decode_timestamp(unpacked)
   // original == Ok(Timestamp(seconds: 1681489200, nanoseconds: 123_456_789))
 }
-```
+``` 
+-->
 
 ## Nested Data Structures
 

@@ -103,7 +103,6 @@ pub fn extension_decoding_test() {
 }
 
 pub fn roundtrip_extension_test() {
-  // Test that encoding and then decoding an extension value returns the original value
   let ext_value = data.Extension(42, <<1, 2, 3, 4>>)
 
   let result =
@@ -118,7 +117,6 @@ pub fn roundtrip_extension_test() {
     Error(_) -> should.fail()
   }
 
-  // Test a larger extension value
   let large_data =
     bit_array.append(<<1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16>>, <<
       17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
